@@ -1,3 +1,6 @@
+"""
+Largely based on code written by Jake Brinkmann, thanks Jake!
+"""
 
 import sys
 import json
