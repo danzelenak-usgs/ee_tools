@@ -79,7 +79,7 @@ def build_command_line_arguments():
     :return:
     ArgumentParser.parse_args
     """
-    description = 'Search and download ARD data (skip those already downloaded)'
+    description = 'Search and compile a list of collection 1 scenes'
 
     parser = ArgumentParser(description=description, add_help=False)
 
