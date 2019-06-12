@@ -101,8 +101,9 @@ def build_command_line_arguments():
                         choices=['LANDSAT_TM_C1', 'LANDSAT_ETM_C1', 'LANDSAT_MSS_C1', 'LANDSAT_8_C1'],
                         help='EE Catalog dataset name')
 
-    parser.add_argument('--acq_dates', type=str, metavar= 'YYYY-MM-DD,YYYY-MM-DD', dest='acq_date', default=None,
-                        help='Search Dates Acquired (FROM TO)')
+    parser.add_argument('--acq_dates', type=str, metavar= 'YYYY-MM-DD', dest='acq_date', default=None,
+                        help='Search Dates Acquired, can be single date or \n
+                              two dates representing FROM, TO (YYYY-MM-DD,YYYY-MM-DD)')
 
     parser.add_argument('--months', type=list, metavar='INT', dest='months', default=[],
                         help='Months of acquisition to search for, default=[]')
